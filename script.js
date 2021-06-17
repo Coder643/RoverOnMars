@@ -2,7 +2,7 @@ canvas=document.getElementById("myCanvas");
 ctx=canvas.getContext("2d");
 images_array=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0bvvspdA6IZoSeJpknHUr1hzJyyc08V-8g&usqp=CAU",
 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy9t2OrU1GbmpuNzmverEFb1Qz9a5i2fw4Gg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScz3fthADuPKWCZoiJI5sTicZdXG2HZMPpEA&usqp=CAU"];
-random_number=Math.floor(math.random()*3);
+random_number=Math.floor(Math.random()*3);
 console.log(random_number);
 rover_width=50;
 rover_height=30;
@@ -25,7 +25,7 @@ function uploadBackground(){
 }
 
 function uploadRover(){
-    ctx.drawImage(rover_imageTag,rover_x,rover_y,rover.width,rover.height);
+    ctx.drawImage(rover_imageTag,rover_x,rover_y,rover_width,rover_height);
 }
 
 window.addEventListener("keydown",mykeydown);
